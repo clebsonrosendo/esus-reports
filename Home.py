@@ -2,32 +2,32 @@ import streamlit as st
 
 
 connection_page = st.Page(
-    'pages/Connection.py',
+    'pages/conexoes.py',
     title='Gerenciador de Conexões',
     icon=':material/database:')
 
 professional_page = st.Page(
-    'pages/Report_Professional.py',
+    'pages/profissionais.py',
     title='Relatórios Profissional',
     icon=':material/analytics:')
 
 services_page = st.Page(
-    'pages/Atendimentos.py',
+    'pages/atendimentos.py',
     title='Atendimentos Profissional',
     icon=':material/groups:')
 
 evolution_page = st.Page(
-    'pages/Evolucoes.py',
+    'pages/evolucoes.py',
     title='Evoluções',
     icon=':material/how_to_reg:')
 
 time_page = st.Page(
-    'pages/Horarios.py',
+    'pages/horarios.py',
     title='Horários dos Profissionais',
     icon=':material/pending_actions:')
 
 managerbk_page = st.Page(
-    'pages/Gerenciador_Backups.py',
+    'pages/backups.py',
     title='Gerenciador de Backups',
     icon=':material/cloud_upload:')
 
