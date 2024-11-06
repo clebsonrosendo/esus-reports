@@ -19,10 +19,6 @@ df = pd.DataFrame(query)
 # Date Filter
 select_date_i = st.selectbox('Data', options=df['Data'].unique(), index=None, placeholder='Escolha um dia', format="DD/MM/YYYY")
 select_date_f = st.selectbox('Data', options=df['Data'].unique(), index=None, placeholder='Escolha um dia', format="DD/MM/YYYY")
-# Date and time
-ts = time.time()
-dt = datetime.datetime.fromtimestamp(ts).strftime('%Y%m%d%H%M%S')
-
 
 # Show Button
 if select_date:
