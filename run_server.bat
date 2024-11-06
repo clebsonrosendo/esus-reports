@@ -1,2 +1,2 @@
 @echo off
-.venv\Scripts\streamlit run main.py --server.headless true --server.port 8501
+.venv\Scripts\streamlit run Home.py --server.headless true --server.port 8501
