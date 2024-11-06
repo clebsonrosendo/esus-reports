@@ -1,7 +1,8 @@
-import sqlite3 as sqlite
+import streamlit as st
 
-# Classe de Inicialização do Banco de dados
-class DataBase:
+@st.cache_resource
+def new_connection_database():
+    db_connection = st.connection("esus_db", type="sql")
 
-    path = './.streamlit/'
+    return db_connection
 
