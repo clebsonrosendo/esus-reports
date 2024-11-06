@@ -32,12 +32,7 @@ managerbk_page = st.Page(
     icon=':material/cloud_upload:')
 
 
-pg = st.navigation([services_page,
-                    professional_page,
-                    evolution_page,
-                    time_page,
-                    managerbk_page,
-                    connection_page])
+pg = st.navigation([professional_page])
 
 # Config page
 st.set_page_config(page_title='PÁGINA INICIAL', page_icon=':material/home:')
