@@ -10,10 +10,10 @@ st.warning('Recurso Indisponível no Momento')
 
 
 file = open("../querys/atendimentos_prof.sql", "r")
-file.read()
+file = str(file.read())
 
 # Get data DB
-query = conn.query(file)
+query = conn.new(file)
 # Generate DataFrame
 df = pd.DataFrame(query)
 # Date Filter
