@@ -1,8 +1,13 @@
 import streamlit as st
+import pandas as pd
 
 
-def new(arg: str):
-    db_connection = st.connection("esus_db", type="sql")
-    query = db_connection.query(arg, show_spinner=False, ttl=0)
+def new():
+    conn = st.connection("postgresql", type="sql")
+    df = conn.query('SELECT * FROM tb_atendimentos;', ttl="10m")
+    dd = pd.DataFrame(df)
 
-    return query
+    return dd
+
+nerd = new()
+print(nerd)
