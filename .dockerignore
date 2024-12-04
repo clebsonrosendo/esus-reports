@@ -1,5 +1,6 @@
 /.idea/
 /.tests/
 /.venv/
+/.git/
 .gitignore
 README.md
