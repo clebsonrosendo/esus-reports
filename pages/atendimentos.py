@@ -1,5 +1,5 @@
 import streamlit as st
-import scripts.connection as conn
+# import scripts.connection as conn
 import pandas as pd
 import time
 import datetime
@@ -8,9 +8,6 @@ import datetime
 st.title('Atendimentos Profissional')
 st.warning('Recurso Indisponível no Momento')
 
-
-file = open("../querys/atendimentos_prof.sql", "r")
-query = str(file.read())
 
 # Get data DB
 # result_query = conn.new(query)
