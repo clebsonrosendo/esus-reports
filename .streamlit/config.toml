@@ -2,7 +2,6 @@
 # If True, will show a warning when you run a Streamlit-enabled script via "python my_script.py".
 # Default: true
 showWarningOnDirectExecution = true
-client.toolbarMode = "minimal"
 
 [logger]
 # Level of logging: 'error', 'warning', 'info', or 'debug'.
@@ -52,3 +51,6 @@ gatherUsageStats = true
 # Port that the browser should use to connect to the server when in liveSave mode.
 # Default: whatever value is set in server.port.
 serverPort = 8501
+
+[client]
+toolbarMode = "minimal"
