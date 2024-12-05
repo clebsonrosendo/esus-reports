@@ -23,4 +23,7 @@ EXPOSE 8501
 HEALTHCHECK CMD curl --fail http://localhost:8501/_stcore/health
 
 # This command init container and run streamlit app
-ENTRYPOINT ["streamlit", "run", "home.py"]
+ENTRYPOINT ["streamlit", "run"]
+
+# This command is the parameter for entrypoint
+CMD ["home.py"]
